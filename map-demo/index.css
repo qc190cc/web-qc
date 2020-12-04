@@ -1,0 +1,83 @@
+#header-map {
+    height: 100%;
+    width: 100%;
+    background-color: #15255B;
+    overflow: hidden;
+    position: relative;
+}
+#header-map .box {
+    position: absolute;
+    top:0;
+    left: 0;
+    width:100%;
+    height: 100%;
+}
+/* 显示弹出框按钮 */
+#header-map .btn-dom{
+    position: absolute;
+    left: 30%;
+    bottom: 10px;
+    z-index: 1000;
+    cursor: pointer;
+    color: #2448bf;
+    padding: 7px 15px;
+}
+/* 弹出框 */
+#header-map .dialog-dom{
+    position: absolute;
+    left: 10%;
+    top: 2%;
+    width: 80%;
+    height: 96%;
+    display: none;
+    z-index: 1001;
+    background: #0a1743;
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 2% 1% 1%;
+}
+#header-map.show .dialog-dom{
+    display: inline-block;
+}
+/* 表格 */
+#header-map .dialog-dom .table{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: inherit;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#header-map .dialog-dom .table .table-row{
+    padding: 0 30px;
+}
+#header-map .dialog-dom span{
+    display: inline-block;
+    width: 6em;
+    border: 1px solid #5a72c4;
+    border-left-width: 0;
+    font-size: 14px;
+    padding: 3px 0;
+    color: #909399;
+    text-align: center;
+    line-height: 1.8em;
+}
+#header-map .dialog-dom span:first-child{
+    border-left-width: 1px;
+}
+/* 关闭按钮 */
+#header-map .dialog-dom .close-btn{
+    position: absolute;
+    top: 0;
+    right: 1%;
+    cursor: pointer;
+    color:#fff;
+    font-size: 1.5em;
+}
+#header-map .header-map-btn:hover{
+    color: #40a9ff;
+}
+#header-map ::-webkit-scrollbar {
+    background: #5a72c4 !important;
+}
