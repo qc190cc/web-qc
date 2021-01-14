@@ -1,16 +1,28 @@
 <template>
 	<div>
-		<div>test</div>
+		<div>test{{ number }}</div>
 		<router-link to="/">index</router-link>
+		<div class="test">
+			<div>水电费打发但是发多少</div>
+			<div class="test2">
+				sdgfdag大商股份十多个但是感受到根深蒂固水电费大师傅水电费打算发多少
+			</div>
+		</div>
 		<div class="bottom">
 			底部
+			<div>底部<span>底部</span></div>
 		</div>
 	</div>
 </template>
 <script>
+import { mixin } from '@/mixins/mixin.js'
+import * as test2 from '@/mixins/test2.js'
+console.log('test2: ', test2);
 export default {
+    mixins: [mixin],
     mounted() {
         this.observer();
+        this.number += 1;
     },
     methods: {
         observer() {
@@ -29,6 +41,17 @@ export default {
 }
 </script>
 <style lang="less" scoped>
+.test{
+    border: 1px solid;
+    display: inline-block;
+    div{
+        display: inline-block;
+    }
+    .test2{
+        width: 100%;
+        border: 1px dashed;
+    }
+}
 .bottom{
 	width: 200px;
 	height: 200px;
