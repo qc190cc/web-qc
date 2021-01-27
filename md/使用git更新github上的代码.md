@@ -27,7 +27,7 @@ git status
 
 git add *
 
-3.接着输入git commit -m "更新说明“，commit只是提交到缓存区域
+3.接着输入git commit -m "更新说明“，commit只是提交到缓存区域(删除时 git commit -am '删除说明')
 
 git commit -m "更新说明“
 
