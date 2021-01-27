@@ -20,14 +20,16 @@ export default {
         demo1() {
             console.log('这里是page1');
             const params = {
-                a: 'b11111111111111111111111111111111'
+                test: 'test'
             }
             request({
-                baseURL: 'http://localhost:3000',
-                url: '/',
+                baseURL: 'http://47.103.205.236',
+                url: '/users/getUserInfo',
                 method: 'get',
                 params: params
-            });
+            }).then(res => {
+                console.log('res: ', res);
+            })
         }
 
     }
