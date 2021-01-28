@@ -1,3 +1,15 @@
+git add . 
+git commit -m "更新说明"
+git commit -am '删除说明'
+git pull // 拉取代码
+git push // 提交代码
+git branch -a // 查看分支
+git branch -r // 列出远程分支
+git branch branchName // 创建新分支
+git checkout branchName // 切换到分支
+git branch -m | -M oldbranch newbranch  // 重命名分支，如果newbranch名字分支已经存在，则需要使用-M强制重命名
+git branch -d | -D branchname // 删除branchname分支
+git branch -d -r branchname 删除远程branchname分支
 一、clone代码
 
 1.把大神的代码clone到本地，或者clone自己github上的代码，使用指令：
@@ -27,7 +39,7 @@ git status
 
 git add *
 
-3.接着输入git commit -m "更新说明“，commit只是提交到缓存区域(删除时 git commit -am '删除说明')
+3.接着输入git commit -m "更新说明"，commit只是提交到缓存区域(删除时 git commit -am '删除说明')
 
 git commit -m "更新说明“
 
@@ -43,18 +55,15 @@ git pull
 
 
 linux服务器上安装并连接github账户
-差点忘记git的使用方法，在新的服务器上安装git
-
 首先一步到位直接安装
-
 sudo yum install git-all
+
 然后设置github地址
+git config --global user.name "qc190cc"
+git config --global user.email "qc199036@qq.com"
 
-git config --global user.name "Your Name"
-git config --global user.email "email@example.com"
 之后直接在服务器上生成公钥
+ssh-keygen -t rsa -C "qc199036@qq.co"
 
-ssh-keygen -t rsa -C "xx@xx.com"
 会给出公钥地址，然后复制一下到github添加公钥的地方
-
 cat /root/.ssh/id_rsa.pub

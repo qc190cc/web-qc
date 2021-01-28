@@ -23,8 +23,8 @@ export default {
                 test: 'test'
             }
             request({
-                baseURL: 'http://47.103.205.236',
-                url: '/users/getUserInfo',
+                baseURL: 'http://47.103.205.236:3000',
+                url: '/',
                 method: 'get',
                 params: params
             }).then(res => {
