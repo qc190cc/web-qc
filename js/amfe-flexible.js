@@ -31,8 +31,9 @@ module.exports = {
       // 设计稿 375:37.5
       // 设计稿：750:75
       // Vant 是基于 375
-      rootValue: 37.5,
-      propList: ["*"]
+      rootValue: 37.5, // 根据设计图尺寸写，设计图是1920，就写192
+      propList: ['*'], // 需要被转换的属性
+      selectorBlackList: ['el-'], // 不进行px转换的选择器
     }
   }
 }

@@ -71,3 +71,7 @@ Navicat，小海豚等数据库图形化工具
 	ALTER USER 'root'@'localhost' IDENTIFIED BY '新密码';
 
 	exit;（退出mysql）
+
+
+show databases; // 查看所有db
+show create database 数据库名; // 查看数据库的详细创建信息
