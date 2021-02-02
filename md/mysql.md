@@ -73,5 +73,23 @@ Navicat，小海豚等数据库图形化工具
 	exit;（退出mysql）
 
 
-show databases; // 查看所有db
+show databases; // 查看所有db(须有标点符号)
 show create database 数据库名; // 查看数据库的详细创建信息
+use 数据库名; // 进入对应数据库
+show tables; // 查看数据库的所有表
+desc table_name; // 查看表结构
+ALTER TABLE user CHANGE upassword password VARCHAR(40) // 修改字段名称 ALTER TABLE 表名 CHANGE 旧字段名 新字段名 新数据类型;
+<!-- 
+	创建一张表 
+	如果你不想字段为 NULL 可以设置字段的属性为 NOT NULL， 在操作数据库时如果输入该字段的数据为NULL会报错。
+	AUTO_INCREMENT定义列为自增的属性，一般用于主键，数值会自动加1。
+	PRIMARY KEY关键字用于定义列为主键。 您可以使用多列来定义主键，列间以逗号分隔。
+	ENGINE 设置存储引擎，CHARSET 设置编码。
+-->
+CREATE TABLE IF NOT EXISTS `user`(
+   `user_id` INT UNSIGNED AUTO_INCREMENT,
+   `name` VARCHAR(100) NOT NULL,
+   `upassword` VARCHAR(40),
+   `creat_date` DATE,
+   PRIMARY KEY ( `user_id` )
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
