@@ -90,6 +90,6 @@ CREATE TABLE IF NOT EXISTS `user`(
    `user_id` INT UNSIGNED AUTO_INCREMENT,
    `name` VARCHAR(100) NOT NULL,
    `upassword` VARCHAR(40),
-   `creat_date` DATE,
+   `creat_time` VARCHAR(40),
    PRIMARY KEY ( `user_id` )
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
