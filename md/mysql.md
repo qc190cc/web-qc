@@ -79,6 +79,12 @@ use 数据库名; // 进入对应数据库
 show tables; // 查看数据库的所有表
 desc table_name; // 查看表结构
 ALTER TABLE user CHANGE upassword password VARCHAR(40) // 修改字段名称 ALTER TABLE 表名 CHANGE 旧字段名 新字段名 新数据类型;
+select User,authentication_string,Host from user; // 查询用户表(需先 use mysql)
+<!-- 设置root可远程访问(root用户默认只能本地访问) -->
+use mysql;
+create user root@'%' identified by '123456'; // 先创建用户,密码123456
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION; // "%"表示任何主机都可以远程登录到该服务器上访问。如果要限制只有某台机器可以访问，将其换成相应的IP即可
+FLUSH PRIVILEGES; // 刷新访问权限表
 <!-- 
 	创建一张表 
 	如果你不想字段为 NULL 可以设置字段的属性为 NOT NULL， 在操作数据库时如果输入该字段的数据为NULL会报错。
