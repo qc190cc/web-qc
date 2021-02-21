@@ -1,7 +1,7 @@
-git add . 
+git pull // 拉取代码
+git add .
 git commit -m "更新说明"
 git commit -am '删除说明'
-git pull // 拉取代码
 git push // 提交代码
 git branch -a // 查看分支
 git branch -r // 列出远程分支
