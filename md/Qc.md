@@ -1,5 +1,5 @@
 
-#转换时间
+# 转换时间
 
 new Date().toJSON() - 
 2019-10-18T02:10:13.942Z
@@ -40,11 +40,11 @@ new Date().toLocaleDateString() -
 #验证银行卡
 ###接口: 
 https://ccdcapi.alipay.com/validateAndCacheCardInfo.json?\_input\_charset=utf-8&cardNo=6214832018989180&cardBinCheck=true
-####参数说明
+#### 参数说明
 \_input\_charset:通道; 
 cardNo:卡号; 
 cardBinCheck:卡本; 
-####返回参数说明
+#### 返回参数说明
 cardType：卡类型,DC为储蓄卡，CC为信用卡。  
 bank：所属行简称，CMB 为招商银行。  
 key：银行卡号。
@@ -66,12 +66,12 @@ stat：银行卡状态。
             title: '这是testEvent的title'
         },
     });
-###监听该事件,假设listener注册在window对象上
+### 监听该事件,假设listener注册在window对象上
     // 监听该事件,假设listener注册在window对象上
     window.addEventListener('testEvent',() =>{
         console.log(event.detail);
     })
-###可以在其他地方触发事件
+### 可以在其他地方触发事件
     click() {
         window.testEvent.detail.content = '这是内容';
         window.dispatchEvent(window.testEvent);
@@ -80,7 +80,7 @@ stat：银行卡状态。
 ----------
 
 
-#VUE自定义指令
+# VUE自定义指令
 	/*
 	声明自定义指令的文件
 	 */

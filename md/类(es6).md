@@ -1,5 +1,5 @@
 
-#类（ES6）
+# 类（ES6）
  - es6新增的，相当于构造函数的和原型混合模式
 
 		class Persion{
@@ -15,7 +15,7 @@
 		console.log(p) //Persion{name:'zhangsan',age:20}
 		p.sayName()    //我叫zhangsan
 
-###ES6实现继承的方式
+### ES6实现继承的方式
 - 继承方式extend、super()
   
 		class Father {

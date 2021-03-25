@@ -63,7 +63,7 @@ git config --global user.name "qc190cc"
 git config --global user.email "qc199036@qq.com"
 
 之后直接在服务器上生成公钥
-ssh-keygen -t rsa -C "qc199036@qq.co"
+ssh-keygen -t rsa -C "qc199036@qq.com"
 
 会给出公钥地址，然后复制一下到github添加公钥的地方
 cat /root/.ssh/id_rsa.pub

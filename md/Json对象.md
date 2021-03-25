@@ -1,16 +1,16 @@
 
-#Json对象
+# Json对象
  - 一组数据的无序集合
-##一、创建对象
+## 一、创建对象
 1. 字面量方式 ```let obj={}```
 2. 构造函数方式```let obj2=new Object()```
-##二、属性
+## 二、属性
 - 每条数据由属性名和属性值组成```let obj3={ username:'zhangsan',}```
 - 数据也叫键值对，属性名是键，属性值是值
 - **属性名是字符串格式，只是不用写引号**
 - **属性和属性名相同的情况下可以只写一个**```let obj={name:name}```可改为```let obj={name}```
 
-##三、操作数据
+## 三、操作数据
  - 调用
 	```let obj={pwd:123456,name:'zhangsan'};console.log(obj.pwd)```
 	输出为123456  
@@ -26,11 +26,11 @@
 		    name:a
 		 }
 		 console.log(obj.name) //输出为zhangsan
-##方法
+## 方法
  -  格式```sayName: function(){console.log("我的名字是。。。")}```
  -  调用```obj.sayName()；``` 
  -  如果要在方法里使用同一个对象内的属性，可以用**this**```sayName: function(){console.log(this.name)}```
-##遍历
+## 遍历
  - **for(let i in obj){}**	系统会自动遍历obj，i代表属性，会不断变化，类似i++
  
  		let a="name";

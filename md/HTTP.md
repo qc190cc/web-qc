@@ -1,4 +1,4 @@
-#HTTP
+# HTTP
 -  Hype Text Transfer Protocol(超文本传输协议)的缩写，用于从万维网服务器传输文本到本地的传送协议
 -  基于TCP/IP通信协议来传递数据
 -  属于应用层的面向对象的协议

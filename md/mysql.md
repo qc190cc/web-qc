@@ -1,6 +1,6 @@
-#一 安装MySQL
+# 一 安装MySQL
 	url： https://dev.mysql.com/downloads/mysql/
-###解压后的目录并没有的my.ini文件，没关系可以自行创建在安装根目录下添加的my.ini（新建文本文件，将文件类型改为的.ini），写入基本配置：
+### 解压后的目录并没有的my.ini文件，没关系可以自行创建在安装根目录下添加的my.ini（新建文本文件，将文件类型改为的.ini），写入基本配置：
 	[mysqld]
 	# 设置3306端口
 	port=3306
@@ -36,7 +36,7 @@
 
 [注意] [MY-010454] [服务器]为root @ localhost生成临时密码：9P0gYk-？0，kT其中root @ localhost：后面的9P0gYk-？0，kT就是初始密码（不含首位空格）。在没有更改密码前，需要记住这个密码，后续登录需要用到。复制密码先保存起来!!!
 
-#二 安装MySQL服务
+# 二 安装MySQL服务
 执行命令
 
 	mysqld --install
@@ -54,13 +54,13 @@
 再执行上面安装服务
 
 
-#三 启动MySQL服务
+# 三 启动MySQL服务
 在mysql目录执行命令
 
 	net start mysql
 
 
-#四 连接MySQL + 修改密码
+# 四 连接MySQL + 修改密码
 Navicat，小海豚等数据库图形化工具
 用安装时root @ localhost：后面的初始密码新建连接
 

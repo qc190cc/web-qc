@@ -111,8 +111,8 @@
 - **nodeType**:获取节点种类，返回数字(元素为1，属性为2，文本为3)
 - **nodeValue**:获取节点的具体内容，元素节点为null
 ###节点分类
-#####1.文档节点 document
-#####2.元素节点
+##### 1.文档节点 document
+##### 2.元素节点
 
 - 获取（查找）节点
 	- **document.getElementById("")**：通过ID查找，只会获取第一个
@@ -152,9 +152,9 @@
 		- **previousElementSibling**:获取前一个兄弟元素
 		- **nextElementSibling**:获取后一个兄弟元素
 
-#####3.文本节点
-#####4.属性节点
-####操作节点
+##### 3.文本节点
+##### 4.属性节点
+#### 操作节点
 - 创建节点
 	1. 创建元素节点```document.createElement("a")```
 	2. 创建文本节点```document.createTextNode("hello")```
