@@ -67,3 +67,18 @@ ssh-keygen -t rsa -C "qc199036@qq.com"
 
 会给出公钥地址，然后复制一下到github添加公钥的地方
 cat /root/.ssh/id_rsa.pub
+
+
+<!-- clone子目录 -->
+<!-- # 1. 初始化 在本地指定文件夹内执行此命令设置为git仓库 -->
+git init
+<!-- # 2. 添加远程仓库地址，实现拉取remote的all objects信息-->
+git remote add -f origin git@github.com:qc190cc/personal.git
+<!-- # 3. 开启sparse clone, 用于控制是否允许设置pull指定文件/夹，适用于Git1.7.0以后版本 -->
+git config core.sparseCheckout true
+<!-- # 4. 本地目录的.git文件夹下，如果没有sparse-checkout文件则创建，在其中添加指定的文件/夹fileName，就是需要拉取的那个特定文件/夹。*表示所有，！表示匹配相反 -->
+echo server >> .git/info/sparse-checkout
+<!-- # 5. 查看 -->
+cat .git/info/sparse-chechout
+<!-- # 6. 拉取指定目录,已通过配置sparse-chechout指定了目标文件/夹 -->
+git pull origin master # 拉取master下的内容,如果是拉main分支的内容,则直接使用git checkout main
