@@ -10,6 +10,6 @@ nginx配置 server {
           proxy_pass http://127.0.0.1:3000;
         }
 } 监听80代理至express
-宝塔入口http://qc90.top:8888/qc190cc  user: qc190cc Qc190qcc
-mysql: 主机:47.103.205.236 端口:3306 user:root Qc190qcc
-navict: user: qc190cc@qq.com Qc190qcc
+宝塔入口http://qc90.top:8888/qc190cc  user: qc190cc
+mysql: 主机:47.103.205.236 端口:3306 user:root
+navict: user: qc190cc@qq.com
